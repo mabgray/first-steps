@@ -2,6 +2,9 @@
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
  
 }
 
@@ -10,6 +13,17 @@
     height: 150px;
     position: relative;
     background-color: #eaeaea;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Margin: 10px;
+  }
+  .bottleColor {
+    background-color: pink;
+    width: 100px;
+    height: 150px;
+    position: relative;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -50,4 +64,8 @@
   
   .bottle:hover:before {
     background-color: #ffcc00;
+  }
+
+  .bottle-text {
+    font-family: monospace;
   }

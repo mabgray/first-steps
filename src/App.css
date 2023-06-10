@@ -1,4 +1,11 @@
 .App {
-  display:flex;
   text-align: center;
+  display:flex;
+  flex-wrap: wrap;
 }
+
+.spice-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
