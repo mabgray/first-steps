@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Bottles.css';
 import spices from './spicesData';
 
-export function Bottles() {
+export default function Bottles() {
   const [spiceList, setSpiceList] = useState(spices);
 
   const manageClick = (spiceId) => {
@@ -22,7 +22,7 @@ export function Bottles() {
   const renderedSpiceList = spiceList.map(spice => (
     <div
       key={spice.id}
-      className={spice.gotIt ? "bottleColor" : "bottle"}
+      className= { spice.gotIt ? "bottleColor" : "bottle" }
       onClick={() => {
         manageClick(spice.id);
       }}

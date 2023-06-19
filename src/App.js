@@ -1,21 +1,20 @@
 
 import './App.css';
-import { Bottles } from './Bottles';
+import  Bottles from './Bottles';
 
 function App() {
 
-  const manageClick = () => {
-    console.log("we did it !!!");
-
-  }
+ 
 
   return (
-    <div className="App">
-     <h1>a list of spices</h1>
+  <div className="App">
+    <div>
+      <h1 className="main-title">spice rack</h1>
+     </div>
      <div className="spice-container">
       < Bottles />
      </div>
-    </div>
+  </div>
   );
 }
 

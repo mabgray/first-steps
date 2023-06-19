@@ -2,8 +2,13 @@
   text-align: center;
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+.main-title{
+  font-weight: bold;
 
+}
 .spice-container{
   display: flex;
   flex-wrap: wrap;

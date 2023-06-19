@@ -10,7 +10,7 @@
 
 .bottle {
     width: 100px;
-    height: 150px;
+    height: 100px;
     position: relative;
     background-color: #eaeaea;
     border-radius: 10px;
@@ -22,7 +22,7 @@
   .bottleColor {
     background-color: pink;
     width: 100px;
-    height: 150px;
+    height: 100px;
     position: relative;
     border-radius: 10px;
     display: flex;
@@ -31,41 +31,12 @@
     Margin: 10px;
   }
   
-  .bottle:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    background-color: #eaeaea;
-  }
-  .bottle:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: #eaeaea;
-  }
+ 
   
   .bottle-text {
     text-align: center;
     color: #000000;
-  }
-
-  .bottle:hover {
-    background-color: #ffcc00;
-  }
-  
-  .bottle:hover:before {
-    background-color: #ffcc00;
-  }
-
-  .bottle-text {
     font-family: monospace;
   }
+
+  
