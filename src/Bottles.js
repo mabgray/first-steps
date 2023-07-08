@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Bottles.css';
-import spices from './spicesData';
+import spices from './spicesData.js';
 
-export default function Bottles() {
-  const [spiceList, setSpiceList] = useState([]);
+ function Bottles() {
+  const [spiceList, setSpiceList] = useState(spices);
 
-  // Load state from localStorage on component mount
-   useEffect(() => {
-    const storedState = localStorage.getItem('spiceList');
-    if (storedState) {
-      setSpiceList(JSON.parse(storedState));
-    } else {
-      setSpiceList(spices);
-    }
-  }, []); 
-
-  // Update state and save to localStorage when changes occur
   const manageClick = (spiceId) => {
     const updatedSpiceList = spiceList.map((spice) => {
       if (spice.id === spiceId) {
@@ -27,9 +16,8 @@ export default function Bottles() {
       return spice;
     });
 
-    setSpiceList(updatedSpiceList);
-    localStorage.setItem('spiceList', JSON.stringify(updatedSpiceList));
-  }; 
+    setSpiceList(updatedSpiceList); // Update the state with the updated spice list
+  };
 
   const renderedSpiceList = spiceList.map((spice) => (
     <div
@@ -42,7 +30,6 @@ export default function Bottles() {
   ));
 
   return <div className="bottle-container">{renderedSpiceList}</div>;
+}
 
-  }
-
-  
+export default Bottles;

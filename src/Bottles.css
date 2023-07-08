@@ -13,18 +13,16 @@
     height: 100px;
     position: relative;
     background-color: #eaeaea;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    Margin: 10px;
+    margin: 10px;
   }
   .bottleColor {
     background-color: pink;
     width: 100px;
     height: 100px;
     position: relative;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
